@@ -62,7 +62,9 @@
 
 .input-control::-moz-placeholder {
   color: #171717;
-  font-family: inherit;
+  font-family:'Segoe UI',
+  Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+  'Segoe UI Symbol';
   font-size: 50px;
   font-weight: bolder;
   text-align: left;
@@ -71,7 +73,9 @@
 
 .input-control::placeholder {
   color: #171717;
-  font-family: inherit;
+  font-family: 'Segoe UI',
+  Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+  'Segoe UI Symbol';
   font-size: 50px;
   font-weight: bolder;
   text-align: left;
@@ -84,7 +88,9 @@
 
 .post-content-box::-moz-placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: #171717;
-  font-family: sans-serif;
+  font-family: 'Segoe UI',
+  Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+  'Segoe UI Symbol';
   text-align: left;
   height: 50vh;
   flex-direction: row;

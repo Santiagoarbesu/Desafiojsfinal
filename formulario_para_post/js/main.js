@@ -50,6 +50,12 @@ updatePreview(emptyPost);
   
   });
 
+  //Generar botones de tags y una lista de con cada elemento como hashtag
+
+
+
+
+
 
 
   
@@ -82,7 +88,7 @@ console.log(coments);
   let coverElement = document.getElementById("card-post-cover-image"); /*la imagen*/
   let titleElement = document.getElementById("card-post-title"); /*el título*/
   let hashtagsElement = document.getElementById("card-input-hashtags"); /*las etiquetas*/
-  /*let contentElement =document.getElementById("card-post-content"); /*el contenido*/
+  let contentElement =document.getElementById("card-post-content"); /*el contenido*/
   let comentsElement = document.getElementById("card-coments"); /*comentarios*/
   let reactionsElement = document.getElementById("card-reactions"); /*reacciones*/
 console.log(comentsElement);
@@ -90,7 +96,7 @@ console.log(comentsElement);
   coverElement.setAttribute("src", coverImage);
   titleElement.textContent = title;
   hashtagsElement.textContent = hashtags;
-  /*contentElement.textContent = content;*/
+  contentElement.textContent = content;
   comentsElement.innerHTML = coments;
   reactionsElement.innerHTML = reactions;
 };
