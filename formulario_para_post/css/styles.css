@@ -1,0 +1,92 @@
+.ml-5 {
+  margin-left: 28vh;
+}
+
+.button-dev-logo {
+  border-style: none;
+}
+
+.dev-logo {
+  border-color: transparent;
+  width: 50px;
+  height: 40px;
+}
+
+.bg-light-gray {
+  background-color: #F5F5F5;
+}
+
+.bg-royal-blue {
+  background-color: #2F3AB2;
+}
+
+.title-box-height {
+  height: 20vh;
+}
+
+.content-box-height {
+  height: 50vh;
+}
+
+.input-control {
+  width: 85vh;
+  border-color: transparent;
+}
+
+.post-content-box {
+  width: 85vh;
+  border-color: transparent;
+  flex-direction: row;
+  align-items: start;
+}
+
+.input-image {
+  border-radius: 3px;
+  border-color: lightgray;
+  border-style: solid;
+  width: 160px;
+  height: 40px;
+}
+
+.input-image::-moz-placeholder {
+  color: #171717;
+  font-family: inherit;
+  margin-left: 20px;
+}
+
+.input-image::placeholder {
+  color: #171717;
+  font-family: inherit;
+  margin-left: 20px;
+}
+
+.input-control::-moz-placeholder {
+  color: #171717;
+  font-family: inherit;
+  font-size: 50px;
+  font-weight: bolder;
+  text-align: left;
+  height: 50vh;
+}
+
+.input-control::placeholder {
+  color: #171717;
+  font-family: inherit;
+  font-size: 50px;
+  font-weight: bolder;
+  text-align: left;
+  height: 50vh;
+}
+
+.hashtag-control {
+  border-style: none;
+}
+
+.post-content-box::-moz-placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #171717;
+  font-family: sans-serif;
+  text-align: left;
+  height: 50vh;
+  flex-direction: row;
+  align-items: start;
+}
