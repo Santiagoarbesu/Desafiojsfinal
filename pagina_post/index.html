@@ -1,124 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pagina Post</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styles.css"/>
-</head>
-<body>
-    <div class="col-12 col-md-8 col-lg-6 d-flex flex-column gap-2">
-        <div class="card rounded overflow-hidden border-light-subtle">
-          <img
-            id="card-post-cover-image"
-            class="w-100"
-            src="https://media.dev.to/cdn-cgi/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F4dfg099itxu6mcwnzv9h.jpg"
-            alt=""
-          />
-          <div class="cardcontent p-3 border-light-subtle">
-            <div class="gap-2 d-flex">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="bg-white m-0">
+      <nav class="navbar navbar-expand-lg d-flex border-bottom">
+        <div class="container-fuid w-100">
+          <div
+            class="d-flex justify-content-start justify-content-md-between ps-2"
+          >
+            <button
+              class="navbar-toggler ms-3 d-sm-block d-md-none"
+              type="button"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              data-bs-toggle="offcanvas"
+              href="#navbarSupportedContent"
+              role="button"
+            >
+              <span class="navbar-toggler-icon" height="40"></span>
+            </button>
+            <div class="d-none d-md-block col-1">
               <img
-                class="mt-2 border rounded-circle"
-                src="https://media.dev.to/cdn-cgi/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F1463462%2Fadc8bd5d-e040-4aa7-8cce-18cb72dce06c.jpeg"
-                alt="miguelrodriguez99 profile"
-                width="32"
-                height="32"
+                src="https://dev-to-uploads.s3.amazonaws.com/uploads/logos/resized_logo_UQww2soKuUsjaOGNB38o.png"
+                alt=""
+                width="50"
+                height="40"
               />
-              <div class="d-flex flex-column justify-content-center">
-                <a
-                  class="btn btn-ghost text-dark text-start p-1 fs-m"
-                  href=""
-                >
-                  Miguel
-                </a>
-                <p
-                  class="fw-light fs-sm ms-1 text-light-emphasis link-dark fecha"
-                >
-                  May 25 (12 hours ago)
-                </p>
-              </div>
             </div>
-            <div class="ms-5 d-flex flex-column">
-              <h3 class="">
-                <a
-                  class="text-decoration-none text-dark fw-bold link-title"
-                  href=""
-                  id="card-post-title"
-                  ><strong> First Post&#128640; </strong></a
-                >
-              </h3>
-              <div id="card-input-hashtags">
-                <a id="first-hashtag" class="p-1 btn btn-border fs-m">#css </a>
-                <a id="second-hashtag" class="p-1 btn btn-border fs-m">#js  </a>
-                <a id="third-hashtag" class="p-1 btn btn-border fs-m">#bootstrap</a>
-                <a id="forth-hashtag" class="p-1 btn btn-border fs-m">#nav </a>
-              </div>
-              <div
-                class="reactions mb-3 d-flex justify-content-around text-nowrap"
+            <div
+              class="border rounded d-none d-md-block ms-2 w-50 d-flex flex-nowrap align-items-center"
+            >
+              <button class="btn btn-ghost-morado">
+                <svg class="" width="24" height="24">
+                  <path
+                    d="M18.031 16.617l4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0111 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 01-1.969 5.617zm-2.006-.742A6.977 6.977 0 0018 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 004.875-1.975l.15-.15z"
+                  ></path>
+                </svg>
+              </button>
+              <input
+                class="position-relative no-border w-50 border-0"
+                type="text"
+                placeholder="Search..."
+              />
+            </div>
+            <div
+              class="ms-auto me-3 d-flex justify-content-end align-items-center gap-3"
+            >
+              <button class="d-block d-md-none bg-transparent btn btn-light">
+                <svg class="" width="24" height="24">
+                  <path
+                    d="M18.031 16.617l4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0111 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 01-1.969 5.617zm-2.006-.742A6.977 6.977 0 0018 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 004.875-1.975l.15-.15z"
+                  ></path>
+                </svg>
+              </button>
+              <button
+                class="d-none d-md-block btn btn-outline-dark-morado text-nowrap"
               >
-                <a class="btn btn-ghost fs-reactions d-flex gap-1 w-50">
-                  <span class="position-relative w-50" id="emojis">
-                    <span
-                      class="bg-dark-subtle rounded-circle border-white position-absolute start-nerd z-3"
-                      id="nerd"
-                      >&#129299;</span
-                    >
-                    <span
-                      class="bg-dark-subtle rounded-circle border-white position-absolute start-heart z-2"
-                      id="sparkheart"
-                      >&#128150;</span
-                    >
-                    <span
-                      class="bg-dark-subtle rounded-circle border-white position-absolute start-cat z-1"
-                      id="cat"
-                      >&#128569;</span
-                    >
-                    <span
-                      class="bg-dark-subtle rounded-circle border-white position-absolute start-gift z-0"
-                      id="gift"
-                      >&#127873;</span
-                    ></span
+                Create Post
+              </button>
+              <a class="mx-1" href="">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                  <path
+                    d="M20 17h2v2H2v-2h2v-7a8 8 0 1116 0v7zm-2 0v-7a6 6 0 10-12 0v7h12zm-9 4h6v2H9v-2z"
+                  ></path>
+                </svg>
+              </a>
+
+              <img
+                class="ms-2 rounded-circle"
+                src="https://randomuser.me/api/portraits/women/55.jpg"
+                alt=""
+                width="30"
+                height="30"
+              />
+            </div>
+            <div class="d-none d-md-block col-1"></div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!--Fin del header con boton de busqueda-->
+    <!--Inicio del layout con 3 columnas-->
+    <div class="container-fuid w-100">
+      <div class="row"></div>
+      <div class="col-sm-12 col-md-8 col-lg-6 d-flex flex-column gap-2">
+        <div class="container mt-4">
+          <div class="row"></div>
+        </div>
+        <div class="col-sm-12">
+          <div class="card rounded overflow-hidden border-light-subtle">
+            <img
+              id="card-post-cover-image"
+              class="w-100"
+              src="https://media.dev.to/cdn-cgi/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F4dfg099itxu6mcwnzv9h.jpg"
+              alt=""
+            />
+            <div class="cardcontent p-3 border-light-subtle">
+              <div class="gap-2 d-flex">
+                <img
+                  class="mt-2 border rounded-circle"
+                  src="https://media.dev.to/cdn-cgi/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F1463462%2Fadc8bd5d-e040-4aa7-8cce-18cb72dce06c.jpeg"
+                  alt="miguelrodriguez99 profile"
+                  width="32"
+                  height="32"
+                />
+                <div class="d-flex flex-column justify-content-center">
+                  <a
+                    class="btn btn-ghost text-dark text-start p-1 fs-m"
+                    href=""
                   >
-                  <span class="" id="card-reactions">33 reactions</span>
-                </a>
-                <a class="btn btn-ghost fs-reactions">
-                  <svg
-                    width="24"
-                    height="24"
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="crayons-icon"
+                    Miguel
+                  </a>
+                  <p
+                    class="fw-light fs-sm ms-1 text-light-emphasis link-dark fecha"
                   >
-                    <path
-                      d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z"
-                    ></path>
-                  </svg>
-                  <span class="" id="card-coments">4 comments</span>
-                  </a
-                >
-                <div
-                  id="readingtime"
-                  class="ms-auto d-flex align-items-center"
-                >
-                  <p class="fw-light fs-sm text-light-emphasis mb-0">
-                    5 min read
+                    May 25 (12 hours ago)
                   </p>
                 </div>
-                    </div>
+              </div>
+              <div class="ms-5 d-flex flex-column">
+                <h3 class="">
+                  <a
+                    class="text-decoration-none text-dark fw-bold link-title"
+                    href=""
+                    id="card-post-title"
+                    ><strong> First Post&#128640; </strong></a
+                  >
+                </h3>
+                <div id="card-input-hashtags">
+                  <a id="first-hashtag" class="p-1 btn btn-border fs-m"
+                    >#css
+                  </a>
+                  <a id="second-hashtag" class="p-1 btn btn-border fs-m"
+                    >#js
+                  </a>
+                  <a id="third-hashtag" class="p-1 btn btn-border fs-m"
+                    >#bootstrap</a
+                  >
+                  <a id="forth-hashtag" class="p-1 btn btn-border fs-m"
+                    >#nav
+                  </a>
+                </div>
+                <div
+                  class="reactions mb-3 d-flex justify-content-around text-nowrap"
+                >
+                  <a class="btn btn-ghost fs-reactions d-flex gap-1 w-50">
+                    <span class="position-relative w-50" id="emojis">
+                      <span
+                        class="bg-dark-subtle rounded-circle border-white position-absolute start-nerd z-3"
+                        id="nerd"
+                        >&#129299;</span
+                      >
+                      <span
+                        class="bg-dark-subtle rounded-circle border-white position-absolute start-heart z-2"
+                        id="sparkheart"
+                        >&#128150;</span
+                      >
+                      <span
+                        class="bg-dark-subtle rounded-circle border-white position-absolute start-cat z-1"
+                        id="cat"
+                        >&#128569;</span
+                      >
+                      <span
+                        class="bg-dark-subtle rounded-circle border-white position-absolute start-gift z-0"
+                        id="gift"
+                        >&#127873;</span
+                      ></span
+                    >
+                    <span class="" id="card-reactions">33 reactions</span>
+                  </a>
+                  <a class="btn btn-ghost fs-reactions">
+                    <svg
+                      width="24"
+                      height="24"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="crayons-icon"
+                    >
+                      <path
+                        d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z"
+                      ></path>
+                    </svg>
+                    <span class="" id="card-coments">4 comments</span>
+                  </a>
+                  <div
+                    id="readingtime"
+                    class="ms-auto d-flex align-items-center"
+                  >
+                    <p class="fw-light fs-sm text-light-emphasis mb-0">
+                      5 min read
+                    </p>
+                  </div>
                 </div>
               </div>
-              <div class="card mx-auto mb-4 ">
-                <div class="card-body">
-                <p id="card-post-content"> Este es el contenido de mi post</p>
+            </div>
+            <div class="card mx-auto mb-4">
+              <div class="card-body">
+                <p id="card-post-content">Este es el contenido de mi post</p>
               </div>
             </div>
-            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
-</script>
-<script src="js/main.js"></script>
-</body>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
 <!--TARJETA DE PRUEBA-->
