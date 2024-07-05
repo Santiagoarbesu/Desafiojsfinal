@@ -100,7 +100,9 @@ console.log(comentsElement);
   comentsElement.innerHTML = coments;
   reactionsElement.innerHTML = reactions;
 };
+
 //Generar botones de tags
+
 /*let tagsInput = document.getElementById ("input-hashtags");
 let tagsWrapper = document.getElementById("tags-wrapper");
 
