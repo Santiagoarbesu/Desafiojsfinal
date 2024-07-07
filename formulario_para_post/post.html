@@ -20,11 +20,7 @@
         <div class="card col-sm-8 ms-5">
             <div class="card-body ps-5">
 
-                <form id="randomDateForm">
-                    <label for="randomDate"></label>
-                    <input type="text" id="randomDate" name="randomDate" readonly>
-                    <button type="button" onclick="generarFechaAleatoria()">Generar Fecha</button>
-                </form>
+              
             
                 <form class="col-sm-11 mt-4"
                 id="user-form-create-post">
@@ -35,7 +31,13 @@
                     type="url"
                     placeholder="Add a cover image"
                     class="input-image mt-3 post-field"
-                > 
+                >  
+                <div> <form id="randomDateForm">
+                    <label for="randomDate"></label>
+                    <input type="text" id="randomDate" name="randomDate" readonly>
+                    <button type="button" onclick="generarFechaAleatoria()">Generar Fecha</button>
+                </form></div>
+
                     <div class="input-group input-group-lg mh-100">
                     <input 
                     name="title"
