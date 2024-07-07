@@ -19,11 +19,7 @@
     <div class="container flex">
         <div class="card col-sm-8 ms-5">
             <div class="card-body ps-5">
-                <input type="url"
-                placeholder="Add a cover image"
-                    class="input-image mt-3"
-                    id="new-post-cover-image"
-                >
+
                 <form id="randomDateForm">
                     <label for="randomDate"></label>
                     <input type="text" id="randomDate" name="randomDate" readonly>
@@ -31,32 +27,44 @@
                 </form>
             
                 <form class="col-sm-11 mt-4"
-                id="user-form">
-                <div class="flex-column justify-content-center "> 
+                id="user-form-create-post">
+                <div class="flex-column justify-content-center ">
+                    <input 
+                    name="cover-image"
+                    id="post-cover-image"
+                    type="url"
+                    placeholder="Add a cover image"
+                    class="input-image mt-3 post-field"
+                > 
                     <div class="input-group input-group-lg mh-100">
                     <input 
+                    name="title"
                     type="text" 
                     placeholder="New post title here ..."
-                    class="title-box input-control title-box-height"
-                    id="new-post-title">
-                    <input 
+                    class="title-box input-control title-box-height post-field"
+                    id="post-title">
+                    <div id="tags-wrapper">
+                        <input 
+                        name="hashtags"
                         type="text"
                         placeholder="Add up to 4 tags..."
-                        class="hashtag-control "
-                        id="new-input-hashtags">
+                        class="hashtag-control post-field "
+                        id="input-hashtags"></div>
                     
                 </div>
                 <div class="input-group mt-5">
-                    <input type="text" 
+                    <input 
+                    name="content"
+                    type="text" 
                     placeholder="Write your post content here ..."
-                    class=" post-content-box content-box-height"
-                    id="new-post-content">
+                    class=" post-content-box content-box-height post-field"
+                    id="post-content">
                 </div>
             </div>
+            <button type="submit" class="btn btn-primary bg-royal-blue mt-4 ms-2">Publish</button>
             </form>
             </div>
           </div>
-          <button type="submit" class="btn btn-primary bg-royal-blue mt-4 ms-5">Publish</button>
       </div>
       </div>
     
