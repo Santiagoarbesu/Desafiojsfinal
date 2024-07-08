@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Visualizar Post</title>
+    <!-- Incluir Bootstrap CSS para estilos -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h2>Post Publicado</h2>
+      <div id="postDetails" class="card">
+        <img id="postImage" class="card-img-top" alt="Imagen del post" />
+        <div class="card-body">
+          <h5 id="postTitle" class="card-title"></h5>
+          <p id="postDescription" class="card-text"></p>
+          <p id="postTags" class="card-text">
+            <small class="text-muted"></small>
+          </p>
+          <p id="postDate" class="card-text">
+            <small class="text-muted"></small>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Incluir Bootstrap JS para funcionalidad opcional -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Incluir archivo JavaScript separado -->
+    <script src="view-post.js"></script>
+  </body>
+</html>

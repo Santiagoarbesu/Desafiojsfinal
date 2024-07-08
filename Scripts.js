@@ -33,4 +33,8 @@ const printTagButtons = (tagsArray) => {
     tagsWrapper.innerHTML = tagsHtml;
 };
 
+document.getElementById("createPostBtn").addEventListener("click", function() {
+  window.location.href = "formulario_para_post/post.html"; // Redirige al hacer clic
+});
+
 
