@@ -44,6 +44,7 @@
                         placeholder="Add up to 4 tags..."
                         class="hashtag-control post-field "
                         id="input-hashtags">
+                        <div id="tags-badges"></div>
                     </div>
                     
                 </div>
@@ -55,6 +56,9 @@
                     class=" post-content-box content-box-height post-field"
                     id="post-content">
                 </div>
+                
+              
+                
             </div>
             <button type="submit" class="btn btn-primary bg-royal-blue mt-4 ms-2">Publish</button>
             </form>    
@@ -62,9 +66,29 @@
       </div>
   </div>
       </div>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
 </script>
-<script src="js/main.js"></script>
+
+<script type="module">
+
+  /*import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-app.js";
+  import { getFirestore} from "https://www.gstatic.com/firebasejs/10.12.3/firebase-firestore.js";
+  const firebaseConfig = {
+    apiKey: "AIzaSyDNH9hgWWpOQ-Ugvv2Ey5aXBvOhNtdOjG0",
+    authDomain: "devto-project-cf4c2.firebaseapp.com",
+    databaseURL: "https://devto-project-cf4c2-default-rtdb.firebaseio.com",
+    projectId: "devto-project-cf4c2",
+    storageBucket: "devto-project-cf4c2.appspot.com",
+    messagingSenderId: "1052311079961",
+    appId: "1:1052311079961:web:60d2213f4104cf9f392e88"
+  };
+  const app = initializeApp(firebaseConfig);
+  console.log(app);*/
+ 
+</script>
+
+<script src="js/pruebas_hastags.js" type="module"></script>
 </body>
 </html>
